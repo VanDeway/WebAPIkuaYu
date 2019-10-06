@@ -3,7 +3,7 @@
 
    <pre>
     <code>
-    //<httpProtocol>
+    \<httpProtocol\>
     //  <customHeaders>
     //    <!--响应类型 (值为逗号分隔的一个字符串，表明服务器支持的所有跨域请求的方法)-->
     //    <add name="Access-Control-Allow-Methods" value="GET,POST,PUT,DELETE,OPTIONS" />
