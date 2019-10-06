@@ -1,15 +1,15 @@
 # 解决WebAPI跨域访问的问题的一种方法(应该还有其他方法)<br/>
 1、在服务端的Web.config文件里的<system.webServer>标签里加入如下内容：
     `<httpProtocol>`<br/>
-      `<customHeaders>`<br/>
-        `<!--响应类型 (值为逗号分隔的一个字符串，表明服务器支持的所有跨域请求的方法)-->`<br/>
-        `<add name="Access-Control-Allow-Methods" value="GET,POST,PUT,DELETE,OPTIONS" />`<br/>
-        `<!--响应头设置（Content-Type：只限于三个值application/x-www-form-urlencoded、multipart/form-data、text/plain）-->`<br/>
-        <add name="Access-Control-Allow-Headers" value="x-requested-with,content-type" />
+      >`<customHeaders>`<br/>
+       >>`<!--响应类型 (值为逗号分隔的一个字符串，表明服务器支持的所有跨域请求的方法)-->`<br/>
+       >>`<add name="Access-Control-Allow-Methods" value="GET,POST,PUT,DELETE,OPTIONS" />`<br/>
+       >>`<!--响应头设置（Content-Type：只限于三个值application/x-www-form-urlencoded、multipart/form-data、text/plain）-->`<br/>
+       >>`<add name="Access-Control-Allow-Headers" value="x-requested-with,content-type" /><br/>
         <!--如果设置 Access-Control-Allow-Origin:*，则允许所有域名的脚本访问该资源-->
         <add name="Access-Control-Allow-Origin" value="*" />
         <!--<add name="Access-Control-Allow-Origin" value="http://domain1.com, http://domain2.com" />  设置允许跨域访问的网址-->
-      </customHeaders>
+      >`</customHeaders>
     </httpProtocol>
 2、在服务端的Global.asax.cs文件里加入如下内容：
  <pre>
