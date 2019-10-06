@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "服务端", "服务端\服务端.csproj", "{63C8D98F-BEF7-4453-97F3-5618D2E88C0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "客户端", "客户端\客户端.csproj", "{76C038F9-25A8-41DF-8AA8-6B11C6733730}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C8D98F-BEF7-4453-97F3-5618D2E88C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C8D98F-BEF7-4453-97F3-5618D2E88C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C8D98F-BEF7-4453-97F3-5618D2E88C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C8D98F-BEF7-4453-97F3-5618D2E88C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C038F9-25A8-41DF-8AA8-6B11C6733730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C038F9-25A8-41DF-8AA8-6B11C6733730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C038F9-25A8-41DF-8AA8-6B11C6733730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C038F9-25A8-41DF-8AA8-6B11C6733730}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {662F2E85-F781-4A74-B383-F0B87DF33C81}
+	EndGlobalSection
+EndGlobal
