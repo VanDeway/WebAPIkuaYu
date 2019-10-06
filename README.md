@@ -12,8 +12,9 @@
         <!--<add name="Access-Control-Allow-Origin" value="http://domain1.com, http://domain2.com" />  设置允许跨域访问的网址-->
       </customHeaders>
     </httpProtocol>
+    \<br>
 2、在服务端的Global.asax.cs文件里加入如下内容：
-    ` `` csharp
+    ` " csharp
     /// <summary>
     /// 跨域设置
     /// </summary>
