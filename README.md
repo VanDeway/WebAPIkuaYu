@@ -14,9 +14,10 @@
       </customHeaders>
     </httpProtocol>
    </code>
- </pre>
+ </pre><br/>
 2、在服务端的Global.asax.cs文件里加入如下内容：
-    `
+ <pre>
+   <code>
     /// <summary>
     /// 跨域设置
     /// </summary>
@@ -32,3 +33,5 @@
         Response.Flush();
       }
     }
+</code>
+ </pre>
