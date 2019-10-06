@@ -2,18 +2,18 @@
 1、在服务端的Web.config文件里的<system.webServer>标签里加入如下内容：
 
    <pre>
-    <code>`"xml
-    <httpProtocol>
-      <customHeaders>
-        <!--响应类型 (值为逗号分隔的一个字符串，表明服务器支持的所有跨域请求的方法)-->
-        <add name="Access-Control-Allow-Methods" value="GET,POST,PUT,DELETE,OPTIONS" />
-        <!--响应头设置（Content-Type：只限于三个值application/x-www-form-urlencoded、multipart/form-data、text/plain）-->
-        <add name="Access-Control-Allow-Headers" value="x-requested-with,content-type" />
-        <!--如果设置 Access-Control-Allow-Origin:*，则允许所有域名的脚本访问该资源-->
-        <add name="Access-Control-Allow-Origin" value="*" />
-        <!--<add name="Access-Control-Allow-Origin" value="http://domain1.com, http://domain2.com" />  设置允许跨域访问的网址-->
-      </customHeaders>
-    </httpProtocol>
+    <code>
+    //<httpProtocol>
+    //  <customHeaders>
+    //    <!--响应类型 (值为逗号分隔的一个字符串，表明服务器支持的所有跨域请求的方法)-->
+    //    <add name="Access-Control-Allow-Methods" value="GET,POST,PUT,DELETE,OPTIONS" />
+    //    <!--响应头设置（Content-Type：只限于三个值application/x-www-form-urlencoded、multipart/form-data、text/plain）-->
+    //    <add name="Access-Control-Allow-Headers" value="x-requested-with,content-type" />
+    //    <!--如果设置 Access-Control-Allow-Origin:*，则允许所有域名的脚本访问该资源-->
+    //    <add name="Access-Control-Allow-Origin" value="*" />
+    //    <!--<add name="Access-Control-Allow-Origin" value="http://domain1.com, http://domain2.com" />  设置允许跨域访问的网址-->
+    //  </customHeaders>
+    //</httpProtocol>
     </code>
    </pre>
 
