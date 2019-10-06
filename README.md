@@ -1,6 +1,6 @@
 # 解决WebAPI跨域访问的问题的一种方法(应该还有其他方法)
 1、在服务端的Web.config文件里的<system.webServer>标签里加入如下内容：
-   <pre> "
+   ` `` xml
     <httpProtocol>
       <customHeaders>
         <!--响应类型 (值为逗号分隔的一个字符串，表明服务器支持的所有跨域请求的方法)-->
@@ -12,9 +12,9 @@
         <!--<add name="Access-Control-Allow-Origin" value="http://domain1.com, http://domain2.com" />  设置允许跨域访问的网址-->
       </customHeaders>
     </httpProtocol>
-    " </pre>
 2、在服务端的Global.asax.cs文件里加入如下内容：
-    “/// <summary>
+    ` `` csharp
+    /// <summary>
     /// 跨域设置
     /// </summary>
     protected void Application_BeginRequest()
@@ -28,4 +28,4 @@
         //这样就不会出错，造成页面卡死状态，让用户无限制的等下去
         Response.Flush();
       }
-    }”
+    }
