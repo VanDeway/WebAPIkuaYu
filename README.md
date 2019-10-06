@@ -1,5 +1,6 @@
 # 解决WebAPI跨域访问的问题的一种方法(应该还有其他方法)
 1、在服务端的Web.config文件里的<system.webServer>标签里加入如下内容：
+ <p>
  <pre>
    <code>
     <httpProtocol>
@@ -14,13 +15,13 @@
       </customHeaders>
     </httpProtocol>
    </code>
- </pre><br/>
+ </pre>
+ </p>
+ <br/>
 2、在服务端的Global.asax.cs文件里加入如下内容：
  <pre>
    <code>
-    /// <summary>
-    /// 跨域设置
-    /// </summary>
+    // 跨域设置
     protected void Application_BeginRequest()
     {
       //OPTIONS请求方法的主要作用：
