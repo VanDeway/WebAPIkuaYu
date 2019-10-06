@@ -13,6 +13,7 @@
       </customHeaders>
     </httpProtocol>
 `
+`
 2、在服务端的Global.asax.cs文件里加入如下内容：
     `
     /// <summary>
